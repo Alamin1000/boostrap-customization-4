@@ -10888,6 +10888,10 @@ body {
   height: 100%;
 }
 
+.gradient {
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+}
+
 .menu {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
 }
@@ -11036,4 +11040,74 @@ body {
 .testimonials__name p {
   padding-bottom: 2rem;
   text-transform: capitalize;
+}
+
+.portfolio {
+  padding: 4rem 0;
+}
+.portfolio button {
+  text-transform: capitalize;
+}
+.portfolio-box {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 1.2rem;
+  overflow: hidden;
+  border-top: 0.5rem solid #bb5ef5;
+  z-index: 1;
+}
+.portfolio-box img {
+  transition-duration: 1000ms;
+  transition-property: all;
+  width: 100%;
+  height: 100%;
+}
+.portfolio-box .portfolio-info {
+  transition-duration: 1000ms;
+  transition-property: all;
+  background: rgba(153, 38, 240, 0.75);
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.portfolio-box .portfolio-info .caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+.portfolio-box .portfolio-info .caption h4 {
+  text-transform: uppercase;
+  display: block;
+}
+.portfolio-box:hover .portfolio-info {
+  opacity: 1;
+  visibility: visible;
+}
+.portfolio-box:hover img {
+  transform: scale(1.5);
+}
+
+.get-started {
+  padding: 4rem 0;
+  background-color: #e9ecef;
+}
+
+.cta-info {
+  padding: 3rem;
+  margin: 1rem 0;
+}
+.cta-info__list {
+  position: relative;
+  list-style-type: none;
+  display: block;
+}
+.cta-info li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
